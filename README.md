@@ -1,1 +1,1 @@
-FURUTISTIC WEBSITE
+life
