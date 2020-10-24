@@ -1,5 +1,53 @@
-<html>
+<html><head>
+	<title>test1</title>
+	</head>
+	<body class="isDesktop">
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #FFFFFF;
+			font: 12px/20px Verdana, Arial, geneva, sans-serif;
+			font-weight: 400;
+			text-align: left;
+			overflow: hidden;
+		}
+		
+		#meme {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			background-color: #FFFFFF;
+			background: url("stonks.jpeg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-size: contain;
+			background-position: top left;
+			z-index: 12;
+		}
 
+		#audio {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 1px;
+			width: 1px;
+			overflow: hidden;
+			pointer-events: none;
+		}
+
+		body.isMobile #audio {
+			height: 100%;
+			width: 100%;
+			z-index: 55;
+			pointer-events: auto;
+			opacity: 0;
+		}
+	</style>
 <div id="audio">
 		<iframe allow="autoplay; encrypted-media" frameborder="0" width="100%" height="100%" src="<iframe width="1019" height="573" src="https://www.youtube.com/embed/mrZC1Jcv0dw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;autoplay=1&amp;mute=2;playsinline=1"></iframe>
 	</div>
